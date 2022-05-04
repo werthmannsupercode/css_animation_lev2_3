@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 100vh;
+}
+
+section img {
+    border: 5px solid white;
+}
+
+section img:hover {
+    cursor: pointer;
+    animation-name: shadowEffect;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shadowEffect {
+    0% {
+        box-shadow: 0 0 50px white;
+    }
+
+    25% {
+        box-shadow: 0 0 80px red;
+    }
+
+    50% {
+        box-shadow: 50px 50px 50px blue, -50px -50px 50px lightblue;
+    }
+
+    75% {
+        box-shadow: 0 0 80px green;
+    }
+
+    100% {
+        box-shadow: 0 0 50px white;
+    }
+}
